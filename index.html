@@ -1,1 +1,526 @@
+<!DOCTYPE html>
 
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>STUDYMATE | ادرس بذكاء</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+
+:root {
+
+  --navy: #101e38;
+
+  --blue: #263f66;
+
+  --light: #f4f6fa;
+
+  --gold: #d8b879;
+
+  --text: #202b3d;
+
+}
+
+* {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  font-family: 'Cairo', sans-serif;
+
+  background: var(--light);
+
+  color: var(--text);
+
+}
+
+header {
+
+  background: white;
+
+  padding: 18px 8%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  box-shadow: 0 2px 15px #00000008;
+
+}
+
+.logo {
+
+  font-size: 23px;
+
+  font-weight: 800;
+
+  color: var(--navy);
+
+  letter-spacing: 1px;
+
+}
+
+nav a {
+
+  text-decoration: none;
+
+  color: #526078;
+
+  margin-right: 22px;
+
+  font-size: 14px;
+
+}
+
+.hero {
+
+  background: var(--navy);
+
+  color: white;
+
+  padding: 100px 9%;
+
+  text-align: center;
+
+}
+
+.hero small {
+
+  color: var(--gold);
+
+  letter-spacing: 3px;
+
+}
+
+.hero h1 {
+
+  font-size: clamp(30px, 5vw, 49px);
+
+  margin: 20px 0;
+
+  line-height: 1.6;
+
+}
+
+.hero p {
+
+  color: #c4cede;
+
+  line-height: 2;
+
+  max-width: 600px;
+
+  margin: auto;
+
+}
+
+.btn {
+
+  display: inline-block;
+
+  padding: 13px 28px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-family: inherit;
+
+  font-weight: 700;
+
+  margin-top: 28px;
+
+  background: var(--gold);
+
+  color: var(--navy);
+
+  transition: .2s;
+
+}
+
+.btn:hover {
+
+  transform: translateY(-3px);
+
+}
+
+section {
+
+  padding: 75px 9%;
+
+  text-align: center;
+
+}
+
+.section-title {
+
+  color: var(--navy);
+
+  font-size: 29px;
+
+  margin-bottom: 12px;
+
+}
+
+.subtitle {
+
+  color: #7b8799;
+
+  margin-bottom: 38px;
+
+}
+
+.cards {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 22px;
+
+}
+
+.card {
+
+  background: white;
+
+  padding: 30px 22px;
+
+  border-radius: 15px;
+
+  border: 1px solid #e7eaf0;
+
+  text-align: center;
+
+}
+
+.card .number {
+
+  color: var(--gold);
+
+  font-size: 30px;
+
+  margin-bottom: 12px;
+
+}
+
+.card h3 {
+
+  color: var(--navy);
+
+  margin-bottom: 12px;
+
+}
+
+.card p {
+
+  color: #7b8799;
+
+  font-size: 14px;
+
+  line-height: 2;
+
+}
+
+.join {
+
+  background: white;
+
+}
+
+.join-box {
+
+  background: var(--navy);
+
+  color: white;
+
+  max-width: 750px;
+
+  margin: auto;
+
+  padding: 45px 25px;
+
+  border-radius: 18px;
+
+}
+
+.join-box p {
+
+  color: #c4cede;
+
+  line-height: 2;
+
+  margin-top: 12px;
+
+}
+
+.links {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+}
+
+.whatsapp {
+
+  background: #25a366;
+
+  color: white;
+
+}
+
+.discord {
+
+  background: #5865f2;
+
+  color: white;
+
+}
+
+footer {
+
+  background: #0b162a;
+
+  color: #aab6c9;
+
+  text-align: center;
+
+  padding: 28px;
+
+  font-size: 13px;
+
+}
+
+@media(max-width:600px) {
+
+  header {
+
+    padding: 16px 5%;
+
+  }
+
+  nav a {
+
+    margin-right: 9px;
+
+    font-size: 12px;
+
+  }
+
+  .hero {
+
+    padding: 75px 6%;
+
+  }
+
+  section {
+
+    padding: 60px 6%;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">STUDYMATE.</div>
+
+  <nav>
+
+    <a href="#about">عنّا</a>
+
+    <a href="#services">الخدمات</a>
+
+    <a href="#join">الاشتراك</a>
+
+  </nav>
+
+</header>
+
+<div class="hero">
+
+  <small>YOUR STUDY PARTNER</small>
+
+  <h1>رحلتك الدراسية،<br>نصنعها معًا.</h1>
+
+  <p>
+
+    مساحة دراسية تساعدك على تنظيم رحلتك،
+
+    متابعة تقدمك، والعمل نحو أهدافك بثبات.
+
+  </p>
+
+  <a href="#join" class="btn">ابدأ رحلتك الآن</a>
+
+</div>
+
+<section id="about">
+
+  <h2 class="section-title">مرحبًا بك في STUDYMATE</h2>
+
+  <p class="subtitle">
+
+    أكثر من مجرد جدول مذاكرة، نحن رفيق رحلتك الدراسية.
+
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <div class="number">01</div>
+
+      <h3>التنظيم</h3>
+
+      <p>خطط دراسية تساعدك على ترتيب وقتك ومهامك.</p>
+
+    </div>
+
+    <div class="card">
+
+      <div class="number">02</div>
+
+      <h3>المتابعة</h3>
+
+      <p>متابعة مستمرة لتقدمك وإنجازاتك الدراسية.</p>
+
+    </div>
+
+    <div class="card">
+
+      <div class="number">03</div>
+
+      <h3>التحفيز</h3>
+
+      <p>بيئة تشجعك على الاستمرار وتحقيق أهدافك.</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="services">
+
+  <h2 class="section-title">خدماتنا</h2>
+
+  <p class="subtitle">كل ما تحتاجه لتنظيم رحلتك التعليمية</p>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>القدرات</h3>
+
+      <p>متابعة وتنظيم الاستعداد لاختبار القدرات.</p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>التحصيلي</h3>
+
+      <p>تنظيم ومتابعة الاستعداد للاختبار التحصيلي.</p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>متابعة دراسية</h3>
+
+      <p>خطط ومهام ومتابعة حسب احتياجاتك.</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="join" id="join">
+
+  <h2 class="section-title">انضم إلى STUDYMATE</h2>
+
+  <p class="subtitle">خطوتك الأولى نحو رحلة دراسية منظمة.</p>
+
+  <div class="join-box">
+
+    <h2>مستعد تبدأ؟</h2>
+
+    <p>
+
+      تواصل معنا لإتمام الاشتراك،
+
+      وبعد تأكيد الدفع ستصلك تفاصيل دخول مجتمعك الدراسي.
+
+    </p>
+
+    <div class="links">
+
+      <a class="btn whatsapp"
+
+         href="https://wa.me/966547776014"
+
+         target="_blank">
+
+         الاشتراك والدفع عبر واتساب
+
+      </a>
+
+      <a class="btn discord"
+
+         href="https://discord.gg/3vfrjvuGe"
+
+         target="_blank">
+
+         مجتمع Discord
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="logo" style="color:white">STUDYMATE.</div>
+
+  <p>Study smarter. Achieve more.</p>
+
+  <p>© 2026 STUDYMATE. جميع الحقوق محفوظة.</p>
+  
+    <p>© 2026 STUDYMATE. جميع الحقوق محفوظة.</p>
+  </footer>
+  
+  </body>
+  
+  </html>
